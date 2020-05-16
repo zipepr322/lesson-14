@@ -1,5 +1,8 @@
 @import "../../node_modules/bootstrap/scss/bootstrap-grid"
 @import "variables"
+body
+  margin: 0
+  padding: 0
 
 .company_logo
   width: 44px
@@ -43,10 +46,13 @@ ul
   background-color: #5094f2
   @extend %work-sans
   font-size: 20px
+//---------------------------------------------------
 
-.middle_container_left_image
+.middle_container_left_image, .middle_container_center_image, .middle_container_right_image
+  display: flex
+  justify-content: center
+  align-items: center
   width: 185px
   height: 185px
   background-color: #5094f2
   border-radius: 100%
-  background-image: url("./img/")
