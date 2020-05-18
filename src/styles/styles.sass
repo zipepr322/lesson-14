@@ -1,29 +1,35 @@
 @import "../../node_modules/bootstrap/scss/bootstrap-grid"
 @import "variables"
-body
+*
   margin: 0
   padding: 0
+  box-sizing: border-box
+
+html
+  font-size: 24px
 
 .company_logo
-  width: 44px
-  height: 44px
+  width: 1.833rem
+  height: 1.833rem
   border-radius: 100%
   display: flex
   background-color: #5094f2
-  margin: 25px 0 25px 0
+  margin: 1.041rem 0 1.041rem 0
+  font-size: 2.7rem
+  color: white
 
 
 .company_name
   @extend %work-sans
-  font-size: 40px
-  margin-left: 15px
+  font-size: 1.666rem
+  margin-left: 0.625rem
 
 li
   list-style-type: none
 
 a
   color: #6c6c6c
-  font-size: 18px
+  font-size: 0.75rem
   @extend %work-sans
   text-decoration: none
 
@@ -34,25 +40,98 @@ ul
   width: 100%
 
 .iphone_container
-  width: 100%
-  height: 100%
-  background-image: url("./img/iphone.png")
+  background-image: url("./img/back.png")
   background-position: center
   background-repeat: no-repeat
   background-size: cover
-  background-color: #6c6c6c
+  //background-color: #6c6c6c
+  padding: 1rem 0 0 0.5rem
+
+.iphone_header
+  @extend %work-sans
+  font-size: 1.5rem
+  color: #ffffff
+
+.iphone_text
+  @extend %work-sans
+  font-size: 1rem
+  color: #ffffff
+  padding-top: 0.8rem
 
 .sign_button
   background-color: #5094f2
   @extend %work-sans
-  font-size: 20px
+  font-size: 0.84rem
+  margin-top: 0.8rem
+  padding: 1.2%
+  outline: none
+  border: none
+  cursor: pointer
+  border-radius: 0.15rem
+  margin-left: 0.5rem
+  .sign_button_text
+    padding: 0 0.4rem 0 0.4rem
+    color: #ffffff
+
 //---------------------------------------------------
+//.middle_container_block:nth-child(2)
+//  margin: 0 3% 0 3%
 
 .middle_container_left_image, .middle_container_center_image, .middle_container_right_image
   display: flex
   justify-content: center
   align-items: center
-  width: 185px
-  height: 185px
+  width: 7.7rem
+  height: 7.7rem
   background-color: #5094f2
   border-radius: 100%
+
+.middle_container_center_image
+  background-color: #d94748
+
+.middle_container_right_image
+  background-color: #ebbb11
+
+.middle_container_block
+  margin-top: 2rem
+
+.middle_container_header
+  font-size: 0.8rem
+  color: #5094f2
+  margin-top: 1.3rem
+  text-align: center
+
+.middle_container_text
+  font-size: 0.52rem
+  color: #909090
+  margin-top: 0.58rem
+  text-align: center
+//------------------------------------------------------
+
+.bottom_container
+  margin: 2.75rem 0 2.75rem 0
+
+.bottom_container_header
+  padding-left: 2%
+  @extend %work-sans
+  font-size: 1.6rem
+  color: #6f7173
+  padding-bottom: 1.4rem
+
+.bottom_container_text_header
+  @extend %work-sans
+  font-size: 1rem
+  color: #6f7173
+  padding-top: 2rem
+  padding-bottom: 0.5rem
+
+.bottom_container_text
+  color: #6f7173
+  font-size: 0.666rem
+  padding-top: 0.7rem
+
+.footer_text
+  border-top: 0.042rem solid #e5e5e5
+  color: #909090
+  padding: 1.4rem 0 2rem 0
+  font-size: 0.6rem
